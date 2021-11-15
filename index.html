@@ -34,7 +34,7 @@
 
     body {
       background: url("images/pattern-background-desktop.svg");
-      background-position:top;
+      background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
       background-color: hsl(225, 100%, 94%);
@@ -55,7 +55,7 @@
       width: 30%;
       background-color: #ffff;
       border-radius: 15px;
-      box-shadow:  0 10px 20px 1px rgba(0, 0, 0, 0.178);
+      box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.178);
     }
 
     .hero {
@@ -77,7 +77,7 @@
       align-items: center;
       justify-content: center;
       margin: 2vw 1vw 1vw 1vw;
-      
+
     }
 
     section p {
@@ -105,60 +105,104 @@
     .leftside-text {
       display: flex;
     }
-    .leftside-text img{
+
+    .leftside-text img {
       max-width: 6vw;
       max-height: 6vw;
     }
+
     .text {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
-    .text p{
+
+    .text p {
       line-height: 0;
     }
-    .btn{
+
+    .btn {
       margin: 2vw;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
-    .btn *{
+
+    .btn * {
       margin: 0.5vw;
       width: 25vw;
       font-size: 1vw;
     }
-    .btn-primary{
-      background-color:hsl(245, 75%, 52%);
+
+    .btn-primary {
+      background-color: hsl(245, 75%, 52%);
       color: whitesmoke;
       padding: 1vw 1vw;
       font-family: 'Red Hat Display', sans-serif;
       border: none;
       border-radius: 10px;
       cursor: pointer;
-      box-shadow:  0 8px 20px 1px hsla(245, 75%, 52%, 0.397);
+      box-shadow: 0 8px 20px 1px hsla(245, 75%, 52%, 0.397);
     }
-    .btn a{
+
+    .btn a {
       display: block;
       width: auto;
       text-decoration: none;
       color: hsl(225, 46%, 61%);
       font-weight: 700;
     }
-    .btn a:hover{
-      color:hsl(228, 8%, 26%)
+
+    .btn a:hover {
+      color: hsl(228, 8%, 26%)
     }
-    .btn-primary:hover{
-      background-color:hsl(224, 47%, 57%);
+
+    .btn-primary:hover {
+      background-color: hsl(224, 47%, 57%);
     }
-    .plan-sec a{
+
+    .plan-sec a {
       font-weight: 700;
     }
-    .plan-sec a:hover{
+
+    .plan-sec a:hover {
       text-decoration: none;
-      color:hsl(224, 47%, 57%)
+      color: hsl(224, 47%, 57%)
+    }
+
+    @media only screen and (max-width: 900px) {
+      .container{
+        width: 50%;
+      }
+      h1{
+        font-size: 5vw;
+      }
+      .hero img{
+        max-height: 20vw;
+        min-height: 20vw;
+      }
+      section p{
+        font-size: 2vw;
+        line-height: 3vw;
+      }
+      .plan-sec{
+        width: 30vw;
+      }
+      .plan-sec h1,.plan-sec p{
+        font-size: 1.5vw;
+      }
+      .plan-sec a{
+        font-size: 1.5vw;
+      }
+      .btn a{
+        margin-top:1rem;
+        margin-bottom:1rem;
+    
+        font-size: 1.5vw;
+      }
+
     }
   </style>
 </head>
@@ -196,7 +240,7 @@
         <a href="#">
           Cancel Order
         </a>
-        
+
       </div>
 
   </div>
